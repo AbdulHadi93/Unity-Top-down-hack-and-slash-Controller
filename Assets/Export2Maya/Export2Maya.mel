@@ -1,0 +1,79 @@
+// --------------------------------------------------
+// Create Export2Maya Menu
+// --------------------------------------------------
+global proc Export2Maya(){
+	// Build Scripts Menu
+	if(`menu -exists Export2Maya`) catch(`deleteUI Export2Maya`);
+	menu -label Export2Maya -tearOff 1 -parent MayaWindow Export2Maya;
+	menuItem -d 1;
+	menuItem -label "Setup Lightmap Baking" -c "SetupLightmapBaking()";
+}
+
+// --------------------------------------------------
+// Prepare Scene for Lightmap Baking
+// --------------------------------------------------
+global proc SetupLightmapBaking(){
+	// Clear the selection
+	select -cl;
+	
+	// Get list of display layers
+	string $layer[] = `ls -type displayLayer`;
+
+	// Go through each display layer
+	for($i=0; $i<size($layer); $i++){
+		// Get list of objects attached to the layer
+		string $meshes[] = `listConnections -s 0 -d 1 $layer[$i]`;
+		
+		// Go through each mesh and parent it to the world
+		for($j=0; $j<size($meshes); $j++){
+			// Get the parent of the mesh
+			string $parent[] = `listRelatives -p $meshes[$j]`;
+			
+			// Check if there are children, if so parent them under the world
+			string $children[] = `listRelatives -c -type transform $meshes[$j]`;
+			for($c=0; $c<size($children); $c++){
+				if(size($parent) > 0){
+					parent $children[$c] $parent[0];
+				}
+				else{
+					parent -w $children[$c];
+				}
+			}
+			
+			// If there is a parent, then parent this mesh to the world
+			if(size($parent) > 0){
+				parent -w $meshes[$j];
+			}
+		}
+		
+		// Select all the objects that belong to this layer
+		select $meshes;
+		
+		// Combine the meshes
+		if(size($meshes) > 1){
+			polyUnite -ch 0 -mergeUVSets 1 -n ($layer[$i]+"_mesh") $meshes;
+		}
+		else{
+			// Rename the combined mesh
+			if(`objExists $meshes[0]`) rename $meshes[0] ($layer[$i]+"_mesh");
+		}
+	}
+	
+	// Create temporary group for cleanup later
+	//	string $tempGrp = `group -empty`;
+}
+
+/*
+// This would be your existing Lambert Material
+string $shaders[] = `ls -sl -fl`;
+
+// This would be the desired Material type
+string $replaceType = "VRayMtl";
+
+for($i=0; $i<size($shaders); $i++){
+	string $replaceWith = `createNode $replaceType`;
+	replaceNode $shaders[$i] $replaceWith;
+	delete $shaders[$i];
+	rename $replaceWith $shaders[$i];
+}
+*/

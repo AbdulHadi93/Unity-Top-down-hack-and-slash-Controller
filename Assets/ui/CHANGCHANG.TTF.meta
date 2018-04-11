@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 100ec9df8489483489227d6fbd71fc62
+timeCreated: 1502182220
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: ChangChang
+  fontNames:
+  - ChangChang
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

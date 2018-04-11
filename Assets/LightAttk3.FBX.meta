@@ -1,0 +1,243 @@
+fileFormatVersion: 2
+guid: 08f0156cd54e9bb4ab748b5e9f0e0142
+timeCreated: 1519206330
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bip001 Footsteps
+    100002: Bip001 HeadNub
+    100004: Bip001 L Finger0Nub
+    100006: Bip001 L Finger1Nub
+    100008: Bip001 L Finger2Nub
+    100010: Bip001 L Finger3Nub
+    100012: Bip001 L Finger4Nub
+    100014: Bip001 L Toe0Nub
+    100016: Bip001 R Finger0Nub
+    100018: Bip001 R Finger1Nub
+    100020: Bip001 R Finger2Nub
+    100022: Bip001 R Finger3Nub
+    100024: Bip001 R Finger4Nub
+    100026: Bip001 R Toe0Nub
+    100028: BladeL
+    100030: BladeL_Bone
+    100032: BladeR
+    100034: BladeR_Bone
+    100036: Body
+    100038: Chest
+    100040: Fingers
+    100042: Head
+    100044: Hips
+    100046: Joint
+    100048: LeftArm
+    100050: LeftFoot
+    100052: LeftForeArm
+    100054: LeftHand
+    100056: LeftIndex1
+    100058: LeftIndex2
+    100060: LeftIndex3
+    100062: LeftLeg
+    100064: LeftMiddle1
+    100066: LeftMiddle2
+    100068: LeftMiddle3
+    100070: LeftPink1
+    100072: LeftPink2
+    100074: LeftPink3
+    100076: LeftRing1
+    100078: LeftRing2
+    100080: LeftRing3
+    100082: LeftShoulder
+    100084: LeftThumb1
+    100086: LeftThumb2
+    100088: LeftThumb3
+    100090: LeftToe
+    100092: LeftUpLeg
+    100094: //RootNode
+    100096: Neck
+    100098: Pelvis
+    100100: RightArm
+    100102: RightFoot
+    100104: RightForeArm
+    100106: RightHand
+    100108: RightIndex1
+    100110: RightIndex2
+    100112: RightIndex3
+    100114: RightLeg
+    100116: RightMiddle1
+    100118: RightMiddle2
+    100120: RightMiddle3
+    100122: RightPinky1
+    100124: RightPinky2
+    100126: RightPinky3
+    100128: RightRing1
+    100130: RightRing2
+    100132: RightRing3
+    100134: RightShoulder
+    100136: RightThumb1
+    100138: RightThumb2
+    100140: RightThumb3
+    100142: RightToe
+    100144: RightUpLeg
+    100146: Spine
+    100148: Sword_Hold
+    100150: Sword_Hold_Bone
+    400000: Bip001 Footsteps
+    400002: Bip001 HeadNub
+    400004: Bip001 L Finger0Nub
+    400006: Bip001 L Finger1Nub
+    400008: Bip001 L Finger2Nub
+    400010: Bip001 L Finger3Nub
+    400012: Bip001 L Finger4Nub
+    400014: Bip001 L Toe0Nub
+    400016: Bip001 R Finger0Nub
+    400018: Bip001 R Finger1Nub
+    400020: Bip001 R Finger2Nub
+    400022: Bip001 R Finger3Nub
+    400024: Bip001 R Finger4Nub
+    400026: Bip001 R Toe0Nub
+    400028: BladeL
+    400030: BladeL_Bone
+    400032: BladeR
+    400034: BladeR_Bone
+    400036: Body
+    400038: Chest
+    400040: Fingers
+    400042: Head
+    400044: Hips
+    400046: Joint
+    400048: LeftArm
+    400050: LeftFoot
+    400052: LeftForeArm
+    400054: LeftHand
+    400056: LeftIndex1
+    400058: LeftIndex2
+    400060: LeftIndex3
+    400062: LeftLeg
+    400064: LeftMiddle1
+    400066: LeftMiddle2
+    400068: LeftMiddle3
+    400070: LeftPink1
+    400072: LeftPink2
+    400074: LeftPink3
+    400076: LeftRing1
+    400078: LeftRing2
+    400080: LeftRing3
+    400082: LeftShoulder
+    400084: LeftThumb1
+    400086: LeftThumb2
+    400088: LeftThumb3
+    400090: LeftToe
+    400092: LeftUpLeg
+    400094: //RootNode
+    400096: Neck
+    400098: Pelvis
+    400100: RightArm
+    400102: RightFoot
+    400104: RightForeArm
+    400106: RightHand
+    400108: RightIndex1
+    400110: RightIndex2
+    400112: RightIndex3
+    400114: RightLeg
+    400116: RightMiddle1
+    400118: RightMiddle2
+    400120: RightMiddle3
+    400122: RightPinky1
+    400124: RightPinky2
+    400126: RightPinky3
+    400128: RightRing1
+    400130: RightRing2
+    400132: RightRing3
+    400134: RightShoulder
+    400136: RightThumb1
+    400138: RightThumb2
+    400140: RightThumb3
+    400142: RightToe
+    400144: RightUpLeg
+    400146: Spine
+    400148: Sword_Hold
+    400150: Sword_Hold_Bone
+    4300000: Body
+    4300002: Fingers
+    4300004: Joint
+    4300006: Sword_Hold
+    4300008: BladeL
+    4300010: BladeR
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: BladeL
+    13700002: BladeR
+    13700004: Body
+    13700006: Fingers
+    13700008: Joint
+    13700010: Sword_Hold
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
